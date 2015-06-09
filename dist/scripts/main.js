@@ -29,8 +29,8 @@ $(document).ready(function() {
 	user.on('change', updateProf);
 
 	function updateProf(updateProfModel) {
-		$('.profile-usertitle-name').html(updateProfModel.set('name'));
-		$('.profile-usertitle-job').html(updateProfModel.set('role'));
+		$('.profile-usertitle-name').html(updateProfModel.get('name'));
+		$('.profile-usertitle-job').html(updateProfModel.get('role'));
 	}
 
 });
